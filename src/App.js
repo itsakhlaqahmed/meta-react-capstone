@@ -1,4 +1,3 @@
-import Footer from './components/Footer';
 import Main from './components/Main';
 import Nav from './components/Nav';
 
@@ -8,7 +7,6 @@ function App() {
     <div className='container'>
     <Nav/>
     <Main/>
-    <Footer/>
     <button className="btn" >Online Menu</button>
     </div>
   );
