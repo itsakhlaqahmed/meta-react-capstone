@@ -1,14 +1,16 @@
-import Main from './components/Main';
-import Nav from './components/Nav';
+import About from "./components/About.js"
+import Homepage from "./components/Homepage";
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
-    <div className='container'>
-    <Nav/>
-    <Main/>
-    <button className="btn" >Online Menu</button>
-    </div>
+
+    <Routes>
+      <Route path='/' element={<Homepage />} />
+      <Route path='/about' element={<About />} />
+
+    </Routes>
   );
 }
 
